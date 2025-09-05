@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/mobile/iOS·SCT
+cd /var/mobile/iOS-SCT
 
 # 提交更新
 git add .

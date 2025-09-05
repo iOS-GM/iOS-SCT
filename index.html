@@ -5,39 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iOS·星创团队</title>
     <link rel="stylesheet" href="css/Black-Background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <div class="logo-text">SCT</div>
-        </div>
-        <h1>iOS·星创团队<br>iOS·StarCreate Team</h1>
-        <p class="subtitle">我们团队的别名iOS·STC或者STC</p>
-        <div class="divider"></div>
-        <h2><a href="Introduce.html" class="header-link">关于我们iOS·星创团队(SCT团队)</a></h2>
-        <div class="divider"></div>
-        <h2>SCT旗下的其余组织:<br>(或者附属团队和软件源等等)<br>软件源:iOS-AD Repp<br>(SCT的iOS越狱软件源,简称zqzb)</h2>
-        <div class="divider"></div>
-        <h2>我们的作品有: </h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>sct-signer: </h3>
-                <p>(一种新型的适合SCT团队的签名器)</p>
-                <a href="https://github.com/iOS-GM/SCT-Signature" class="project-link">sct-signer项目仓库</a>
+        <nav class="main-nav">
+            <div class="logo">
+                <div class="logo-text">SCT</div>
             </div>
-            <div class="project-item">
-                <h3>Terminal-File: </h3>
-                <p>(一种终端文件管理器)</p>
-                <a href="https://github.com/iOS-GM/Terminal-Files" class="project-link">Terminal-File项目仓库</a>
+            <ul class="nav-links">
+                <li><a href="Introduce.html">关于我们</a></li>
+                <li><a href="#projects">我们的作品</a></li>
+                <li><a href="#affiliates">附属组织</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </nav>
+        
+        <div class="hero">
+            <h1>iOS·星创团队<br>iOS·StarCreate Team</h1>
+            <p class="subtitle">我们团队的别名iOS·STC或者STC</p>
+            <div class="divider"></div>
+            <h2><a href="Introduce.html" class="header-link">关于我们iOS·星创团队(SCT团队)</a></h2>
         </div>
-        <div class="divider"></div>
     </header>
     
-    <div class="container">
-        <footer>
+    <main class="container">
+        <section class="affiliates-section" id="affiliates">
+            <div class="divider"></div>
+            <h2>SCT旗下的其余组织:<br>(或者附属团队和软件源等等)</h2>
+            <div class="affiliate-card">
+                <i class="fas fa-database affiliate-icon"></i>
+                <h3>软件源: iOS-AD Repp</h3>
+                <p>SCT的iOS越狱软件源,简称zqzb</p>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>我们的作品有: </h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <i class="fas fa-signature project-icon"></i>
+                    <h3>sct-signer: </h3>
+                    <p>(一种新型的适合SCT团队的签名器)</p>
+                    <a href="https://github.com/iOS-GM/SCT-Signature" class="project-link">
+                        <i class="fab fa-github"></i> sct-signer项目仓库
+                    </a>
+                </div>
+                <div class="project-item">
+                    <i class="fas fa-terminal project-icon"></i>
+                    <h3>Terminal-File: </h3>
+                    <p>(一种终端文件管理器)</p>
+                    <a href="https://github.com/iOS-GM/Terminal-Files" class="project-link">
+                        <i class="fab fa-github"></i> Terminal-File项目仓库
+                    </a>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
             <p>© 2025 iOS·星创团队 (iOS·StarCreate Team). 保留所有权利。</p>
-        </footer>
-    </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的移动菜单切换
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
