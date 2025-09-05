@@ -396,9 +396,6 @@ footer {
 
 
 
-/* 添加到Black-Background.css的底部 */
-
-/* 分隔线样式 */
 .divider {
     height: 1px;
     background: linear-gradient(to right, transparent, #8e44ad, transparent);
